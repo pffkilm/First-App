@@ -3,7 +3,7 @@
 
 Наша цель — не идеальное повторение, а понимание основных принципов верстки во Flutter.
 
-**Ссылка на макет в Figma:** (Figma)[https://www.figma.com/design/3abyMyNTH7gMqb7Q592lIC/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5?node-id=0-1&p=f&t=MHKNpqLMCzBQpRUh-0]
+**Ссылка на макет в Figma:** [https://www.figma.com/design/3abyMyNTH7gMqb7Q592lIC/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5?node-id=0-1&p=f&t=MHKNpqLMCzBQpRUh-0]
 
 ---
 
