@@ -50,7 +50,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
         padding: const EdgeInsets.all(24.0),
         child: Column(
           children: [
-            // Аватар пользователя с фото и Pancel.png в правом нижнем углу
+
             Stack(
               alignment: Alignment.center,
               children: [
@@ -61,10 +61,6 @@ class _UpdateProfileState extends State<UpdateProfile> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: const Color(0xFFDADADA),
-                    border: Border.all(
-                      color: const Color(0xFFCAD6FF),
-                      width: 1.0,
-                    )
                   ),
                   child: ClipOval(
                     child: Image.asset(
@@ -91,8 +87,8 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       shape: BoxShape.circle,
                       color: Colors.white,
                       border: Border.all(
-                        color: const Color(0xFFCAD6FF),
-                        width: 1,
+                        color: Colors.white,
+                        width: 2,
                       ),
                     ),
                     child: ClipOval(
