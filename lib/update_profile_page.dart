@@ -33,9 +33,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
         title: const Text(
           'Profile',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
             color: Color(0xFFFE8F12),
+            fontFamily: 'LeagueSpartan',
           ),
         ),
         centerTitle: true,
@@ -60,6 +61,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: const Color(0xFFDADADA),
+                    border: Border.all(
+                      color: const Color(0xFFCAD6FF),
+                      width: 1.0,
+                    )
                   ),
                   child: ClipOval(
                     child: Image.asset(
@@ -86,8 +91,8 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       shape: BoxShape.circle,
                       color: Colors.white,
                       border: Border.all(
-                        color: Colors.white,
-                        width: 2,
+                        color: const Color(0xFFCAD6FF),
+                        width: 1,
                       ),
                     ),
                     child: ClipOval(
@@ -117,12 +122,13 @@ class _UpdateProfileState extends State<UpdateProfile> {
                 Text(
                   'Full Name',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -140,16 +146,17 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       contentPadding: EdgeInsets.all(16),
                     ),
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                   ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Phone Number - редактируемое поле
             Column(
@@ -158,12 +165,13 @@ class _UpdateProfileState extends State<UpdateProfile> {
                 Text(
                   'Phone Number',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -181,9 +189,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       contentPadding: EdgeInsets.all(16),
                     ),
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                     keyboardType: TextInputType.phone,
                   ),
@@ -191,7 +200,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Email - редактируемое поле
             Column(
@@ -200,12 +209,13 @@ class _UpdateProfileState extends State<UpdateProfile> {
                 Text(
                   'Email',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -223,9 +233,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       contentPadding: EdgeInsets.all(16),
                     ),
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                     keyboardType: TextInputType.emailAddress,
                   ),
@@ -233,7 +244,7 @@ class _UpdateProfileState extends State<UpdateProfile> {
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Date Of Birth - редактируемое поле
             Column(
@@ -242,12 +253,13 @@ class _UpdateProfileState extends State<UpdateProfile> {
                 Text(
                   'Date Of Birth',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -265,9 +277,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
                       contentPadding: EdgeInsets.all(16),
                     ),
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Color(0xFFFE8F12),
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan',
                     ),
                   ),
                 ),
@@ -282,7 +295,6 @@ class _UpdateProfileState extends State<UpdateProfile> {
               height: 60,
               child: ElevatedButton(
                 onPressed: () {
-                  // 🎯 Передаем данные в ProfilePage
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -306,9 +318,10 @@ class _UpdateProfileState extends State<UpdateProfile> {
                 child: const Text(
                   'Update Profile',
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 20,
                     fontWeight: FontWeight.w600,
                     color: Colors.white,
+                    fontFamily: 'LeagueSpartan',
                   ),
                 ),
               ),

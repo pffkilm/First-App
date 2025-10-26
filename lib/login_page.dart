@@ -28,7 +28,7 @@ class LoginPage extends StatelessWidget {
             const Text(
               'Welcome back!\nGlad to see you, Again!',
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 26,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -44,9 +44,9 @@ class LoginPage extends StatelessWidget {
                 decoration: InputDecoration(
                   hintText: 'Enter your email',
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  fillColor:  const Color(0xFFDADADA),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none,
                   ),
                   contentPadding: const EdgeInsets.symmetric(
@@ -67,9 +67,9 @@ class LoginPage extends StatelessWidget {
                 decoration: InputDecoration(
                   hintText: 'Enter your password',
                   filled: true,
-                  fillColor: Colors.grey[200],
+                  fillColor: const Color(0xFFDADADA),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(8),
                     borderSide: BorderSide.none,
                   ),
                   contentPadding: const EdgeInsets.symmetric(

@@ -22,9 +22,10 @@ class ProfilePage extends StatelessWidget {
         title: const Text(
           'Profile',
           style: TextStyle(
-            fontSize: 24,
+            fontSize: 16,
             fontWeight: FontWeight.bold,
             color: Color(0xFFFE8F12),
+            fontFamily: 'LeagueSpartan', // Добавлен шрифт
           ),
         ),
         centerTitle: true,
@@ -45,8 +46,12 @@ class ProfilePage extends StatelessWidget {
                   width: 100,
                   height: 100,
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: const Color(0xFFDADADA),
+                      shape: BoxShape.circle,
+                      color: const Color(0xFFDADADA),
+                      border: Border.all(
+                        color: const Color(0xFFCAD6FF),
+                        width: 1.0,
+                      )
                   ),
                   child: ClipOval(
                     child: Image.asset(
@@ -62,9 +67,38 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                 ),
+                // Pancel.png в правом нижнем углу
+                Positioned(
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    width: 30,
+                    height: 30,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                      border: Border.all(
+                        color: const Color(0xFFCAD6FF),
+                        width: 1,
+                      ),
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/Pancel.png',
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return const Icon(
+                            Icons.edit,
+                            size: 15,
+                            color: Colors.grey,
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
-
             const SizedBox(height: 30),
 
             // Full Name
@@ -74,12 +108,13 @@ class ProfilePage extends StatelessWidget {
                 Text(
                   'Full Name',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(16),
@@ -92,18 +127,19 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    fullName, // 🎯 Используем переданное значение
+                    fullName,
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                   ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Phone Number
             Column(
@@ -112,12 +148,13 @@ class ProfilePage extends StatelessWidget {
                 Text(
                   'Phone Number',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(16),
@@ -130,18 +167,19 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    phoneNumber, // 🎯 Используем переданное значение
+                    phoneNumber,
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                   ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Email
             Column(
@@ -150,12 +188,13 @@ class ProfilePage extends StatelessWidget {
                 Text(
                   'Email',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(16),
@@ -168,18 +207,19 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    email, // 🎯 Используем переданное значение
+                    email,
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                   ),
                 ),
               ],
             ),
 
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
             // Date Of Birth
             Column(
@@ -188,12 +228,13 @@ class ProfilePage extends StatelessWidget {
                 Text(
                   'Date Of Birth',
                   style: TextStyle(
-                    fontSize: 14,
-                    color: Colors.grey[700],
+                    fontSize: 20,
+                    color: Colors.black,
                     fontWeight: FontWeight.w500,
+                    fontFamily: 'LeagueSpartan', // Добавлен шрифт
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 8),
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(16),
@@ -206,11 +247,12 @@ class ProfilePage extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    dateOfBirth, // 🎯 Используем переданное значение
+                    dateOfBirth,
                     style: const TextStyle(
-                      fontSize: 16,
+                      fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.w600,
+                      fontFamily: 'LeagueSpartan', // Добавлен шрифт
                     ),
                   ),
                 ),
